@@ -1,0 +1,24 @@
+FORMAT: 1A
+HOST: http://cpsc-2030-fp.apiblueprint.org/
+
+# cpsc-2030-fp
+
+
+## Article [/article/{id}]
+
+# Article Object
+- title (string)
+- content (string)
+- date created (date)
+- last edited (date)
+- user_id (int)
+
+## Articles [/articles]
+
+### List All Articles [GET]
+
++ Response 200 (application/json)
+
+
+        - data (array)
+          - Include Article

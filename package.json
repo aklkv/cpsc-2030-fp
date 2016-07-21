@@ -1,0 +1,20 @@
+{
+  "name": "cpsc-2030-fp",
+  "version": "1.0.0",
+  "description": "Final Project for CPSC-2030-001",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs": "hercule blueprints/** -o apiary.apib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/aklkv/cpsc-2030-fp.git"
+  },
+  "author": "Alexey Kulakov S/N: 100240998",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aklkv/cpsc-2030-fp/issues"
+  },
+  "homepage": "https://github.com/aklkv/cpsc-2030-fp#readme"
+}
