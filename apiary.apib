@@ -3,15 +3,13 @@ HOST: http://cpsc-2030-fp.apiblueprint.org/
 
 # cpsc-2030-fp
 
+# Article Group
 
 ## Article [/article/{id}]
 
-# Article Object
-- title (string)
-- content (string)
-- date created (date)
-- last edited (date)
-- user_id (int)
++ Response 200 (application/json)
+
+        + Attributes (Article)
 
 ## Articles [/articles]
 
@@ -19,6 +17,25 @@ HOST: http://cpsc-2030-fp.apiblueprint.org/
 
 + Response 200 (application/json)
 
+        + Attributes (array[Article])
 
-        - data (array)
-          - Include Article
+
+## Data Structures
+
+### Article
++ title (string)
++ content (string)
++ date created (string)
++ last edited (string)
++ user_id (number)
+
+### Question
++ question: Favourite programming language? (required)
++ published_at: `2014-11-11T08:40:51.620Z` (required)
++ url: /questions/1 (required)
++ choices (array[Choice], required)
+
+### Choice
++ choice: Javascript (required)
++ url: /questions/1/choices/1 (required)
++ votes: 2048 (number, required)
