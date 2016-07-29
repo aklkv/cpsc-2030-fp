@@ -2,8 +2,9 @@
   "name": "cpsc-2030-fp",
   "version": "1.0.0",
   "description": "Final Project for CPSC-2030-001",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "start": "nodemon ./app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs": "hercule blueprints/** -o apiary.apib"
   },
@@ -16,5 +17,17 @@
   "bugs": {
     "url": "https://github.com/aklkv/cpsc-2030-fp/issues"
   },
-  "homepage": "https://github.com/aklkv/cpsc-2030-fp#readme"
+  "homepage": "https://github.com/aklkv/cpsc-2030-fp#readme",
+  "devDependencies": {
+    "nodemon": "^1.9.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.7.1",
+    "express": "^4.14.0",
+    "fortune": "^4.1.9",
+    "fortune-json-api": "^2.0.11",
+    "morgan": "^1.7.0",
+    "nedb": "^1.8.0"
+  }
 }
