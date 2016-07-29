@@ -1,0 +1,10 @@
+{
+  "apps" : [{
+    "name"              : "api",
+    "script"            : "./app.js",
+    "error_file"        : "/var/log/api/error.log",
+    "out_file"          : "/var/log/api/access.log",
+    "watch"             : true,
+    "exec_mode"         : "fork_mode",
+  }]
+}

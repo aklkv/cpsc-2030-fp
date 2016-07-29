@@ -4,9 +4,9 @@
   "description": "Final Project for CPSC-2030-001",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon ./app.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "docs": "hercule blueprints/** -o apiary.apib"
+    "start": "pm2 start ecosystem.json",
+    "start-watch": "npm start -- --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,6 @@
     "url": "https://github.com/aklkv/cpsc-2030-fp/issues"
   },
   "homepage": "https://github.com/aklkv/cpsc-2030-fp#readme",
-  "devDependencies": {
-    "nodemon": "^1.9.2"
-  },
   "dependencies": {
     "body-parser": "^1.15.2",
     "cors": "^2.7.1",
