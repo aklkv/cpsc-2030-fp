@@ -7,7 +7,7 @@ RUN apt-get update -y && \
     apt-get install -y nano vim
 
 # Install nodemon
-npm install -g nodemon
+RUN npm install -g nodemon
 
 # Install app
 RUN rm -rf /var/www/*
