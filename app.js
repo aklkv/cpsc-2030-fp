@@ -34,16 +34,16 @@ app.use(bodyParser.json());
 
 app.post('/login', (req, res) => {
 
-  db.users.find( { email: req.body.email }, (err, user) => {
+  db.users.findOne( { email: req.body.email }, (err, user) => {
+    console.log(user);
     if(err || !user){
-      console.log(err);
       res.json({
           status: 401,
           message: 'Authentication failed. User not found.'
       });
-    } else if (user && (user[0].password === req.body.password)) {
+    } else if (user && (user.password === req.body.password)) {
       let data = {
-        _id: user[0]._id
+        _id: user._id
       }
       res.json({
         status: 200,
