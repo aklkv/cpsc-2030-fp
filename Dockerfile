@@ -8,6 +8,7 @@ RUN apt-get update -y && \
 
 #Install global node modules
 RUN npm install pm2@latest -g
+RUN pm2 link aggxuowc11x6r4a ikxs2u8r69qkw48
 
 # Install app
 RUN rm -rf /var/www/*
