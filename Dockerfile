@@ -7,7 +7,7 @@ RUN apt-get update -y && \
     apt-get install -y nano
 
 #Install global node modules
-RUN npm install -g pm2
+RUN npm install pm2@latest -g
 
 # Install app
 RUN rm -rf /var/www/*
@@ -22,4 +22,4 @@ EXPOSE 80
 
 WORKDIR /var/www
 
-CMD npm run start-watch && pm2 logs
+CMD npm start

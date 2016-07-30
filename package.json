@@ -4,8 +4,7 @@
   "description": "Final Project for CPSC-2030-001",
   "main": "app.js",
   "scripts": {
-    "start": "pm2 start ecosystem.json",
-    "start-watch": "npm start -- --watch",
+    "start": "pm2 start process.json && pm2 logs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
