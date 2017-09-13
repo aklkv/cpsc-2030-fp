@@ -32,7 +32,7 @@ module.exports = fortune({
         body: {
             type: String
         },
-        date: {
+        createdAt: {
             type: Date
         },
         author: {
@@ -61,9 +61,9 @@ module.exports = fortune({
     }
 }, {
     adapter: [
-        nedbAdapter, {
-            dbPath: 'data',
-            autoload: true
-        }
+      nedbAdapter, {
+        dbPath: 'data',
+        autoload: true
+      }
     ]
 });
