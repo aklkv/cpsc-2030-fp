@@ -11,7 +11,7 @@ ADD . /var/www
 
 WORKDIR /var/www
 
-RUN npm install
+RUN npm i
 
 # Create Log directory
 RUN mkdir /var/log/api
