@@ -18,14 +18,14 @@
   },
   "homepage": "https://github.com/aklkv/cpsc-2030-fp#readme",
   "dependencies": {
-    "body-parser": "^1.18.1",
+    "body-parser": "^1.18.2",
     "cors": "^2.8.4",
-    "express": "^4.15.4",
+    "express": "^4.16.0",
     "fortune": "^5.3.1",
     "fortune-http": "^1.2.8",
     "fortune-json-api": "^2.1.2",
     "fortune-nedb": "^1.1.6",
-    "morgan": "^1.8.2",
+    "morgan": "^1.9.0",
     "nedb": "^1.8.0"
   }
 }
